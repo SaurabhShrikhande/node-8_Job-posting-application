@@ -10,11 +10,11 @@ const createjob =  (req, res)=>{
          //  new jobmodel.(req.body);
 
          const newjob = new jobmodel(req.body);
-         newjob.save()   // which is a method
-
+        const newlyaddeddata =  newjob.save()   // which is a method
+        
       res.json({
             sucess : true,
-            message : "dummy create api"
+            message : `dummy create api ${newlyaddeddata._id}`
         })
     }
 
