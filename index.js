@@ -4,8 +4,9 @@ const jobRoutes = require("./routes/job");
 const app = express();
  
 //estabilish the databse connection
-mongoose
-.connect("mongodb://127.0.0.1:27017/jobapp")
+mongoose      //  mongodb+srv://saurabh:saurabh@123456@cluster0.t2ejvfz.mongodb.net/
+               // mongodb://0.0.0.0:27017/jobapp    //for localhost
+.connect("mongodb+srv://saurabh:tjvGuXZT0yI9CnIN@cluster0.t2ejvfz.mongodb.net/")
 .then(() => {
     console.log("database connection sussessfully")
 })

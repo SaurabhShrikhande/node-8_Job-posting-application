@@ -14,4 +14,9 @@ router.get("", jobcontroler.getjob)
 // })
 
 
+router.patch("", jobcontroler.edit)
+
+
+router.delete("" , jobcontroler.del)
+
 module.exports = router;
